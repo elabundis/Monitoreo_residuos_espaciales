@@ -97,30 +97,9 @@
 
 
 
-
+% Initial section
 \vspace{10pt}
-\section{Basics}\label{Sec:Introduction}
-``Constructions" is a platinum open-access journal: We do not charge author processing fees, and we do not pursue any commercial interests. However, this also means that the journal is run on a voluntary basis, and we do not have money to pay professional typesetters. We therefore have to ask the authors to do the typesetting of their papers. To facilitate this task as much as possible, we provide this \LaTeX \ template. Just open the template in the \LaTeX \  editor of your choice and start working in the document main.tex by replacing the text of this short tutorial with the text of your own paper. You can just work as would in a simple text editor; if you have never worked with \LaTeX, there are a few commands you should know:
-
-\begin{itemize}
-    \item If you want to use \textit{italics}, you have to wrap the text to be italicized in the command \verb!\textit{...}!
-    \item If you want to use \textbf{boldface}, use the command \verb!\textbf{...}!
-    \item For adding `single' and ``double" quotes, please use a single or double grave accent (\verb!`! or \verb!``!) for opening the quote and the apostrophe \verb!'! or the regular double quote \verb!"! to close it.
-    \item To start a new \textbf{section}, use \verb!\section{...}! If the section should not be numbered (which is usually the case for Acknowledgment sections and the references), add an asterisk: \verb!\section*{...}!
-    \item Optionally you can add a label to the section using \verb!\label! and then refer to it using the \verb!\ref! command, e.g. \\ \verb!\section{Linguistic examples} \label{sec:linguex}! \\ assigns the label \textit{linguex} to Section \ref{sec:linguex}, and \verb!\ref{sec:linguex}! will show up as \ref{sec:linguex}.
-    \item If you want to make a bulletpoint list like the one you're reading right now, use:
-    \begin{verbatim}
-        \begin{itemize}
-            \item first item
-            \item second item
-            \item etc.
-        \end{itemize}
-    \end{verbatim}
-    \item For linguistic examples, see below.
-    \item Footnotes can be inserted using \verb!\footnote{...}!.\footnote{Duh!}
-    \item \LaTeX \ hyphenates automatically, and usually the hyphenation feature is pretty good. If you want to override the default hyphenation of a word, add it to the \verb!\hyphenation{}!\ word list towards the beginning of the main.tex document -- that's what I've done for the word \textit{numb-ered} a few bulletpoints above (just for expository reasons of course, not because I want to change English hyphenation rules...). If you have very long words, we recommend to insert a \textbf{soft hyphen}, i.e. a hyphen that is not shown unless there is a line break, as\-in\-this\-very\-long\-word. You can insert a soft hyphen by typing \verb!\-!, e.g. \verb!hy\-phe\-na\-tion!.
-    
-\end{itemize}
+\input{section1}
 
 
 \section{Linguistic examples} \label{sec:linguex}
