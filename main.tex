@@ -182,20 +182,13 @@ From 2025 onwards, \textit{Constructions} uses the open font \href{https://softw
 For inserting citations, use \LaTeX's citation syntax:
 
 \begin{itemize}
-    \item Use \verb!\citep{...}! for inserting citations in parantheses, e.g. \citep{Example2}.
-    \item Use \verb!\citet{...}! to insert citations in the format Author/s (Year), as in \citet{Example2}.
-    \item Use \verb!\citeauthor{...}! and \verb!\citeyear{...}! if you just want to cite the author or the year, without parantheses. This can be helpful if you cite something within parantheses (as in this example, see \citeauthor{Example1} \citeyear{Example1}).
-    \item If you want to use a possessive 's in references, you can use the custom command \verb!\citegen{...}! defined in the localstuff.tex file, as in: \citegen{Example1} definition of constructions.
+    \item Use \verb!\cite{...}! for inserting citations, e.g. \cite{Example1}.
+    \item Use \verb!\cite{...}! for inserting citations, e.g. \cite{Example2}.
+    \item Use \verb!\cite{...}! for inserting citations, e.g. \cite{Example3}.
 \end{itemize}
 
 \subsection*{Troubleshooting}
 
-If there are problems with the bibliography, this can have several reasons:
-
-\begin{itemize}
-    \item Some Zotero plugins (like Better BibTeX) change the ``Year" field in the BibTeX entry to ``Date". In this case, you'll have to change all instances of ``Date" to ``Year" in the bibliography file.
-    \item If you want to keep sentence-internal capitals in the citations (e.g. when quoting German titles, such as \citeauthor{Example3} \citeyear{Example3}), make sure that the relevant words are enclosed in curly brackets. If you export the BibTeX entries from Zotero, you usually won't have to worry because it does so automatically.
-\end{itemize}
 
 \section*{Obligatory declarations}
 
@@ -235,6 +228,6 @@ The data and analysis scripts for the present paper are available at [[ADD LINK]
 
 If necessary, please add statements about elements that are exluded from the CC license as described in Section \ref{sec:reusing}.
 
-\bibliography{bibliography}
+\printbibliography
 
 \end{document}

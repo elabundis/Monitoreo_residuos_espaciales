@@ -23,7 +23,6 @@
 	amssymb,
 	microtype,
 	stmaryrd,
-	natbib,
 	amsmath,
 	booktabs,
 	calculator,
@@ -43,8 +42,10 @@
 ]{doclicense}
 
 % set bibliography style
-\bibliographystyle{unified}
-\setcitestyle{aysep={},notesep={: }}
+
+\usepackage{citation-style-language}
+\cslsetup{style = american-physics-society}
+\addbibresource{bibliography.bib}
 
 % heading font:
 \newfontfamily\headingfont[]{IBM Plex Sans}
@@ -62,7 +63,6 @@
 
 
 
-\setlength{\bibsep}{0.0pt}
 
 
 \setlength{\intextsep}{4pt plus 2pt minus 2pt}
